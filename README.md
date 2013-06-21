@@ -1,4 +1,4 @@
-# String Interpolation based HTML Template
+# htmlintp is HTML Interpolation
 
 ## usage
 
@@ -6,8 +6,8 @@
 import htmlintp._
 
 val name = "<em>World</em>"
-val html = html"<p>Hello $name !</p>"
 
+val html = html"<p>Hello $name !</p>"
 html should equal ("<p>Hello &lt;em&gt;World&lt;/em&gt; !</p>")
 
 val unescaped = html"<p>Hello ${raw(name)} !</p>"
